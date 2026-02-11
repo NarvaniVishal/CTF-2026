@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GLS UNIVERSITY _ FCAIT _PG</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+
+    <!-- Nothing interesting here -->
+    <!-- ZmxhZ3tmYWtlX2ZsYWd9 -->
+
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            text-align: center;
+            margin-top: 100px;
+            font-family: monospace;
+        }
+
+        .ghost {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Level 2 Challenge</h1>
+    <p>The flag is not where you think it is.</p>
+
+    <div class="ghost">
+        666c61677b6865785f69735f66756e7d
+    </div>
+
+    <script>
+        var part1 = "ZmxhZw==";  // base64
+        var part2 = "X3IzdiNy";  // base64
+        var part3 = "}gn1d0c3d_"; // reversed
+        var fake = "flag{this_is_not_real}";
+
+        function combine() {
+            return atob(part1) + atob(part2) + part3.split("").reverse().join("");
+        }
+
+        console.log("Maybe combine something?");
+    </script>
+
+</body>
+</html>
